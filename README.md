@@ -1,247 +1,105 @@
-# 📚 Comandos Básicos do Git e GitHub
+# 📘 Projeto Faculdade — Introdução ao GitHub com Python
 
-Este guia contém os principais comandos utilizados no Git e GitHub, com explicações simples para facilitar o aprendizado e o uso durante os projetos da faculdade.
+Este projeto foi desenvolvido como atividade da faculdade com o objetivo de aprender os conceitos básicos do **GitHub**, versionamento de código e utilização do **Git** junto ao **Python**.
 
----
+O código apresenta uma lista simples de objetivos utilizando estruturas básicas da linguagem Python, servindo como exemplo para praticar:
 
-# 🚀 Inicializando um projeto Git
-
-## 📌 Iniciar o Git em uma pasta
-
-```bash
-git init
-```
-
-🔹 Cria um repositório Git local na pasta atual.
+- Criação de repositórios
+- Commits
+- Push para o GitHub
+- Organização de projetos
+- Estrutura de arquivos
+- README.md
 
 ---
 
-# 📂 Verificando arquivos
+## 🚀 Tecnologias utilizadas
 
-## 📌 Ver status do projeto
-
-```bash
-git status
-```
-
-🔹 Mostra:
-
-- Arquivos modificados
-- Arquivos adicionados
-- Arquivos que ainda não foram salvos no Git
+- Python 3
+- Git
+- GitHub
+- VS Code
 
 ---
 
-# ➕ Adicionando arquivos
-
-## 📌 Adicionar um arquivo específico
+## 📂 Estrutura do projeto
 
 ```bash
-git add nome-do-arquivo
-```
-
-### Exemplo:
-
-```bash
-git add novo.py
-```
-
-🔹 Adiciona o arquivo para o próximo commit.
-
----
-
-## 📌 Adicionar todos os arquivos
-
-```bash
-git add .
-```
-
-🔹 Adiciona TODOS os arquivos modificados.
-
----
-
-# 💾 Salvando alterações
-
-## 📌 Criar um commit
-
-```bash
-git commit -m "Mensagem do commit"
-```
-
-### Exemplo:
-
-```bash
-git commit -m "Adicionado sistema de objetivos"
-```
-
-🔹 Salva uma versão do projeto.
-
----
-
-# 🌐 Conectando ao GitHub
-
-## 📌 Conectar repositório local ao GitHub
-
-```bash
-git remote add origin LINK-DO-REPOSITORIO
-```
-
-### Exemplo:
-
-```bash
-git remote add origin https://github.com/usuario/projeto.git
-```
-
-🔹 Liga seu projeto local ao GitHub.
-
----
-
-# ⬆️ Enviando arquivos para o GitHub
-
-## 📌 Primeiro envio do projeto
-
-```bash
-git push -u origin main
-```
-
-🔹 Envia os arquivos para o GitHub.
-
----
-
-## 📌 Próximos envios
-
-```bash
-git push
-```
-
-🔹 Atualiza o repositório online.
-
----
-
-# ⬇️ Baixando projetos
-
-## 📌 Clonar um repositório
-
-```bash
-git clone LINK
-```
-
-### Exemplo:
-
-```bash
-git clone https://github.com/usuario/projeto.git
-```
-
-🔹 Baixa um projeto do GitHub para o computador.
-
----
-
-# 🔄 Atualizando projeto
-
-## 📌 Atualizar projeto com mudanças do GitHub
-
-```bash
-git pull
-```
-
-🔹 Baixa as alterações mais recentes.
-
----
-
-# 🌿 Trabalhando com branches
-
-## 📌 Criar uma branch
-
-```bash
-git branch nome-da-branch
-```
-
-🔹 Cria uma nova ramificação.
-
----
-
-## 📌 Trocar de branch
-
-```bash
-git checkout nome-da-branch
-```
-
-🔹 Muda para outra branch.
-
----
-
-## 📌 Criar e trocar de branch ao mesmo tempo
-
-```bash
-git checkout -b nome-da-branch
-```
-
-🔹 Cria e entra na branch.
-
----
-
-# 🗑️ Removendo arquivos
-
-## 📌 Remover arquivo do Git
-
-```bash
-git rm nome-do-arquivo
-```
-
-🔹 Remove o arquivo do projeto.
-
----
-
-# 👀 Ver histórico
-
-## 📌 Ver commits realizados
-
-```bash
-git log
-```
-
-🔹 Mostra o histórico completo de commits.
-
----
-
-# ⚡ Comandos úteis
-
-## 📌 Ver branches existentes
-
-```bash
-git branch
+📁 projeto-github
+ ├── novo.py
+ └── README.md
 ```
 
 ---
 
-## 📌 Renomear branch principal para main
+## 🧠 Código utilizado
 
-```bash
-git branch -M main
+```python
+objetivos = [
+    "Estudar ADS",
+    "Se formar",
+    "Pegar emprego",
+    "Ficar rico"
+]
+
+for objetivo in objetivos:
+    print(objetivo)
+
+# Atualizado em 02/03/2026 15:06 by: iLipe
 ```
 
 ---
 
-## 📌 Ver configurações do Git
+## ▶️ Como executar o projeto
+
+### 1. Clone o repositório
 
 ```bash
-git config --list
+git clone https://github.com/seu-usuario/seu-repositorio.git
 ```
 
 ---
 
-# 🧠 Fluxo básico do Git
+### 2. Abra a pasta do projeto
 
 ```bash
-git init
-git add .
-git commit -m "Primeiro commit"
-git remote add origin LINK
-git push -u origin main
+cd seu-repositorio
 ```
 
 ---
 
-# ✨ Autor
+### 3. Execute o arquivo Python
 
-Projeto acadêmico desenvolvido para aprendizado de Git e GitHub.
+```bash
+python novo.py
+```
+
+---
+
+## 💻 Saída esperada
+
+```bash
+Estudar ADS
+Se formar
+Pegar emprego
+Ficar rico
+```
+
+---
+
+## 📚 Objetivo acadêmico
+
+Este trabalho teve como finalidade aprender na prática:
+
+- Como criar um repositório no GitHub
+- Como enviar arquivos utilizando Git
+- Como documentar projetos com README.md
+- Como organizar códigos em projetos reais
+- Noções básicas de versionamento
+
+---
+
+## ✨ Autor
+
+**iLipe**  
+Projeto acadêmico — ADS (Análise e Desenvolvimento de Sistemas)
